@@ -1,0 +1,17 @@
+/*
+To action the grabbing hand on draggable items, include this CSS.
+
+Note:; the item to drag (enable(".box")) may need additional css to be draggable.
+*/
+
+*[data-draghost="mouseup"] *[data-draggable="draggable"],
+*[data-draggable="draggable"] {
+    cursor: grab;
+}
+
+*[data-draghost="mousemove"] *[data-draggable="draggable"],
+*[data-draghost="mousedown"] *[data-draggable="draggable"]  {
+    cursor: grabbing !important;
+    user-select: none;
+}
+

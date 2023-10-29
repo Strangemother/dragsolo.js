@@ -1,0 +1,79 @@
+
+.box {
+    background: #4444445c;
+    display: flex;
+    position: absolute;
+    padding: 1em;
+    border-radius: .4em;
+}
+
+.box.two {
+    left: 44%;
+    top: 38%;
+}
+
+.box.one {
+    left: 10em;
+    top: 8%;
+}
+
+.box.three {
+    left: 17em;
+    top: 23%;
+}
+
+.box.four {
+    left: 1em;
+    top: 8%;
+}
+
+
+svg .transparent {
+    fill: transparent;
+}
+
+body.svg-mousemove {
+    user-select: none;
+}
+
+.box {
+    border: solid 3px transparent;
+}
+
+.box:hover,.box:focus {
+    border: solid 3px #101010;
+}
+/*
+
+*[data-dragging="dragging"],
+*[data-draghost="mousedown"],
+*[data-draghost="mousemove"] {
+    cursor: grabbing !important;
+}
+*/
+
+*[data-draghost="mouseup"] *[data-draggable="draggable"],
+*[data-draggable="draggable"] {
+    cursor: grab;
+}
+
+*[data-draghost="mousemove"] *[data-draggable="draggable"],
+*[data-draghost="mousedown"] *[data-draggable="draggable"]  {
+    cursor: grabbing !important;
+    user-select: none;
+}
+/*
+*[data-draghost="mousemove"] * {
+    cursor: grabbing !important;
+    user-select: none;
+}
+*/
+
+.control-node {
+    border: solid 2px #020404;
+    position: absolute;
+    min-width: .5em;
+    min-height: .5em;
+    background: #2e92a9;
+    border-radius: 50%;
+}

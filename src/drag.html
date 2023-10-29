@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/app.css">
+        <link rel="stylesheet" href="css/draghost.css">
+        <title>Drag Solo</title>
+    </head>
+
+    <body>
+        <h1>Drag Solo.</h1>
+
+        <div id='container' class="container">
+
+            <div class="box one">One</div>
+            <div class="box two">Two
+                <div class="anchor"></div>
+            </div>
+            <div class="box three">Three</div>
+            <div class="box four">Four</div>
+        </div>
+
+        <script  src="js/draghost.js" dragsolo-selector='.box'></script>
+        <!-- <script  src="js/drag-boxes.js"></script> -->
+    </body>
+</html>
