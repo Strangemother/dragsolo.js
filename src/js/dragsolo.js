@@ -2,11 +2,11 @@
 
 Two components exist for dragging, the _host_ and the draggables.
 
-1. initate a new DragHost()
+1. initate a new DragSolo()
 2. Enable dragging on your items.
 
 
-dragHost = new DragHost()
+dragHost = new DragSolo()
 dragHost.enable('.box')
 dragHost.enable('h1')
 
@@ -125,7 +125,7 @@ class Draggable {
 }
 
 
-class DragHost {
+class DragSolo {
 
     constructor(parent=document) {
         this.parent = parent
@@ -244,7 +244,7 @@ document.addEventListener("DOMContentLoaded", (event) => {
         }
     }
     if(selectors.length > 0) {
-        let dh = window.dragHost = new DragHost()
+        let dh = window.dragHost = new DragSolo()
         for(let s of selectors) {
             dh.enable(s)
         }

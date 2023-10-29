@@ -4,21 +4,24 @@
 
 `DragSolo.js` offers a focused, efficient, and streamlined dragging experience. This lightweight library is dedicated solely to dragging functionalities, designed for developers seeking a no-nonsense approach to drag-and-drop features. With an emphasis on simplicity and ease-of-use, DragSolo provides exactly what you need — pure dragging capabilities, without any excess.
 
+![Demo of DragSolo.js](./demo.gif)
+
+
 ## Getting Started
 
-Include draghost.js in your HTML. For a plug-and-play experience, apply a selector in the script:
+Include `dragsolo.js` in your HTML. For a plug-and-play experience, apply a selector in the script:
 
 ```html
-<script src="js/draghost.js" dragsolo-selector='.box'></script>
+<script src="js/dragsolo.js" dragsolo-selector='.box'></script>
 ```
 And you're good to go!
 
 ## Manual Setup
 
-If you're not using the dragsolo-selector attribute on the script tag, set up the drag host manually:
+If you're not using the `dragsolo-selector` attribute on the script tag, set up the drag host manually:
 
 ```js
-const dragHost = new DragHost();
+const dragHost = new DragSolo();
 dragHost.enable('.box');
 ```
 
